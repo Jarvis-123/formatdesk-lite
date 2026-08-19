@@ -6,14 +6,14 @@ import { join } from "node:path";
 
 const siteUrl =
   process.env.SITE_URL?.replace(/\/$/, "") || "https://formatdesk-lite.vercel.app";
-const ogImageUrl = `${siteUrl}/linkedin-share.jpg`;
+const ogImageUrl = `${siteUrl}/og-share-v2.jpg`;
 const title = "FormatDesk Lite — merge PDFs in the browser";
 const description = "Merge PDFs locally with pdf-lib. Files never leave your device.";
 
 const inject = `<!-- crawler-og -->
 <meta property="og:image" content="${ogImageUrl}"/>
-<meta property="og:image:width" content="1200"/>
-<meta property="og:image:height" content="627"/>
+<meta property="og:image:width" content="2400"/>
+<meta property="og:image:height" content="1254"/>
 <meta property="og:image:type" content="image/jpeg"/>
 <meta property="og:title" content="${title}"/>
 <meta property="og:description" content="${description}"/>
