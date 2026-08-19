@@ -12,7 +12,7 @@
       ]
     },
     {
-      "source": "/og-share-v2.jpg",
+      "source": "/og.jpg",
       "headers": [
         { "key": "Content-Type", "value": "image/jpeg" },
         {
@@ -21,6 +21,8 @@
         }
       ]
     },
+    {
+      "source": "/og-share-v2.jpg",
       "headers": [
         { "key": "Content-Type", "value": "image/jpeg" },
         {
