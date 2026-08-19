@@ -22,6 +22,8 @@ npm run dev
 
 Internal ops tools often need “combine these PDFs” without sending offer letters to a random web converter. This is the **public, generic** extract of that pattern.
 
+**Live demo:** https://formatdesk-lite.vercel.app · **Repository:** https://github.com/Jarvis-123/formatdesk-lite
+
 ## License
 
 MIT

@@ -5,7 +5,7 @@
   "description": "Client-side PDF merge in the browser — no server, no employer docs.",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && node scripts/patch-og-for-crawlers.mjs",
     "start": "next start",
     "lint": "eslint"
   },
