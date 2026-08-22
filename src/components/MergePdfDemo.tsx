@@ -3,6 +3,8 @@
 import { PDFDocument } from "pdf-lib";
 import { useCallback, useState } from "react";
 
+const REPO_URL = "https://github.com/Jarvis-123/formatdesk-lite";
+
 type FileEntry = {
   id: string;
   file: File;
@@ -190,6 +192,14 @@ export function MergePdfDemo() {
       <footer className="text-xs text-[var(--muted)]">
         Built by Amit Singh · Pattern from internal Format Desk · no employer documents or server
         converters.
+        <a
+          href={REPO_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-2 block rounded text-[var(--fg)] underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]"
+        >
+          View source on GitHub
+        </a>
       </footer>
     </div>
   );
