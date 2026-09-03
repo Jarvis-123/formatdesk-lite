@@ -1,5 +1,7 @@
 # FormatDesk Lite
 
+[![CI](https://github.com/Jarvis-123/formatdesk-lite/actions/workflows/ci.yml/badge.svg)](https://github.com/Jarvis-123/formatdesk-lite/actions/workflows/ci.yml)
+
 **Client-side PDF merge** in the browser using [pdf-lib](https://pdf-lib.js.org/).
 
 No server upload. No Gotenberg/Stirling. No employer documents — merge your own PDFs locally.

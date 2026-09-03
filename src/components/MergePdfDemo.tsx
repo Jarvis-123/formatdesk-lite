@@ -2,6 +2,7 @@
 
 import { PDFDocument } from "pdf-lib";
 import { useCallback, useState } from "react";
+import { moveById } from "@/lib/order";
 
 const REPO_URL = "https://github.com/Jarvis-123/formatdesk-lite";
 
@@ -47,16 +48,7 @@ export function MergePdfDemo() {
   }
 
   function moveFile(id: string, dir: -1 | 1) {
-    setFiles((prev) => {
-      const idx = prev.findIndex((f) => f.id === id);
-      if (idx === -1) return prev;
-      const target = idx + dir;
-      if (target < 0 || target >= prev.length) return prev;
-      const copy = [...prev];
-      const [item] = copy.splice(idx, 1);
-      copy.splice(target, 0, item);
-      return copy;
-    });
+    setFiles((prev) => moveById(prev, id, dir));
   }
 
   async function mergeAndDownload() {

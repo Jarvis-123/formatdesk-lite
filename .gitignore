@@ -4,3 +4,4 @@ out
 .env
 .vercel
 next-env.d.ts
+dist-test
