@@ -22,7 +22,7 @@ npm run dev
 
 ## Why this exists
 
-Internal ops tools often need “combine these PDFs” without sending offer letters to a random web converter. This is the **public, generic** extract of that pattern.
+Merging a few PDFs usually means uploading documents you would rather not hand to a random web converter. This does the merge with `pdf-lib` in the browser, so the files never leave the machine — there is no server to send them to.
 
 **Live demo:** https://formatdesk-lite.vercel.app · **Repository:** https://github.com/Jarvis-123/formatdesk-lite
 
